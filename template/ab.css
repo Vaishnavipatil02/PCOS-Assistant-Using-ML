@@ -1,0 +1,179 @@
+
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:hwb(255 47% 18%);
+    width: 100%;
+ 
+     
+}
+
+body {
+  background-color: #dee2ff;
+}
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+p h3{
+  background-color: hwb(255 47% 18%);
+}
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+
+
+
+.main{
+    display :flex;
+    flex-direction:column;
+}
+
+.pic{
+    align-items:center;
+  margin-top:5px;
+  padding:0 0px
+}
+.pic img{
+    width:250px;
+    border:1px solid #842c95;
+    padding:15px
+}
+
+.cont{
+  margin-top: -10px;
+  text-align:center;
+  padding:0 48px;
+    font-family:monospace;
+}
+
+.write h2{
+  font-size:20px;
+  font-family:monospace;
+  color:hsl(10, 64%, 35%);
+}
+
+span{
+  color:#01ff34;
+}
+
+
+.foot{
+  margin-top: 130px;
+  font-family:monospace;
+  text-align:center;
+  color :#db0f0f;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 690px)
+{
+  .other{
+    margin-left: 50px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
+
+   .pic img {
+    width: 320px;
+  }
+  p h3{
+    background-color: hwb(255 47% 18%);
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 900px)
+{
+  .other{
+    margin-left: 150px;
+  }
+  .foot{
+    margin-top: 60px;
+  }
+
+  .x{
+    padding:0 40px;
+  }
+
+   .pic img {
+    width: 500px;
+  }
+  p h3{
+    background-color: hwb(255 47% 18%);
+  }
+}
+
+@media only screen and (min-width: 905px)
+{
+  
+  .heads{
+
+  }
+  .logo h3{
+    
+    margin-left:30px;
+  }
+ .other{
+   margin-left: 590px;
+ }
+
+ .x{
+   padding: 0 70px;
+ }
+  .x a{
+  margin-left:30px;
+}
+p h3{
+  background-color: hwb(255 47% 18%);
+}
+
+
+
+.pic img{
+  width:600px;
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.cont{
+  margin-top: 10px;
+}
+
+
+
+.write h2{
+  font-size:40px;
+ 
+}
+p {
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.foot{
+  margin-top:40px;
+}
+}
+
+
+

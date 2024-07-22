@@ -1,0 +1,303 @@
+`<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+          
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:transparent;
+    width: 100%;
+ 
+     
+}
+body{
+
+
+background: #ffccd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff758f, #ffccd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff758f, #ffccd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+background-repeat:no-repeat;
+background-size: cover;
+}
+
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#9c7ed8;
+    margin-left: 20px;
+    margin-top:25px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+.ok{
+    background:#9c4c5a3b;
+    width:200px;
+    padding:20px 40px;
+    margin-left:0px;
+    margin-top:20px;
+    border-radius:30px;
+    color:black;
+}
+
+.area{
+     width: 100%;
+    height:600vh;
+    
+   
+}
+
+p{
+color : white;
+margin-top:20px;
+}
+
+input{
+    width:70%;
+    border-radius:10px;
+    padding:6px 30px;
+    background:transparent;
+    border:1px solid #312f2f66;
+    margin-top:10px;
+    text-transform:uppercase;
+}
+
+input[type=submit]{
+    background:#f7f6fd;
+    margin-left:0px;
+    padding:10px;
+}
+input[type=text]{
+    color:black;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 690px)
+{
+  .other{
+    margin-left: 50px;
+  }
+}
+@media only screen and (min-width: 699px) and{max-width:890px}
+{
+.logo{
+  margin-left:50px;
+}
+.x {
+  margin-left:90px;
+}
+img{
+  width:250px;
+}
+.area{
+     width: 100%;
+    height:450vh;
+    
+   
+}
+
+}
+
+@media only screen and (min-width: 900px) 
+{
+  .main{
+    flex-direction:row;
+   
+  }
+  .logo{
+  margin-left:80px;
+}
+.other{
+  margin-left:700px;
+}
+.x {
+  margin-left:90px;
+}
+
+.ok{
+    background:#9c4c5a3b;
+    width:600px;
+    padding:50px;
+    margin-left:0px;
+    margin-top:20px;
+    border-radius:30px;
+    color:black;
+
+}
+
+.area{
+     width: 100%;
+    height:450vh;
+    
+   
+}
+
+}
+</style>
+
+         </head>
+<body>
+<div class="area" align="center">
+<div class="heads">
+<div class ="logo">
+<a href ="/" style="text-decoration:none;">
+<h3>VJAS</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="/about" style="text-decoration:none;">
+About</a>
+</div>
+<div class="x">
+<a href ="/choose" style="text-decoration:none;">
+Test</a>
+</div>
+<div class="x">
+<a href ="/remedy" style="text-decoration:none;">
+Remedy </a>
+</div>
+</div>
+</div>
+
+ <center><img src="{{ url_for('static', filename = '19.jpg') }}" alt="LOVE YOURSELF FIRST" height="100px" width="150px" style="border-radius:50px; border: 1px solid white; padding:10px;"></center>
+  
+<div class="mains">
+<p> Never forget to love your own body :)</p>
+ <br><br>ALERT: PCOS is a women health issue !
+<div class="photo">
+
+</div>
+    
+
+<div class="ok" align="center">
+ <form method="POST", action="{{url_for('home')}}">
+<b> 
+Age
+<br> <input type="text", name='Age (yrs)', placeholder="Age"> <br><br>
+
+Weight
+<br> <input type="text", name='Weight (Kg)', placeholder="Weight"> <br><br>
+
+Height
+<br> <input type="text", name='Height(Cm)', placeholder="Height"> <br><br>
+
+BMI(height/weight)
+<br><input type="text", name='BMI', placeholder="BMI"> <br><br>
+            
+Blood Group :<br>
+A+  :11 <br>
+B+  :12<br>
+O+  :13 <br>
+AB+ :14 <br>
+A-  :15 <br>
+B-  :16<br>
+O-  :17 <br>
+AB- :18<br>
+
+<br> <input type="text", name='Blood Group', placeholder="Blood group" required min="11" max="18"> <br><br>
+
+Periodic Cycle(months)<br>(In how many months do you get periods)
+<br> <input type="text", name='fCycle(R/I) ', placeholder="Periodic Cycle(months)"> <br><br>
+
+Cycle length(days) 
+<br> <input type="text", name='Cycle length(days)', placeholder="Cycle length"> <br><br>
+
+Marriage Status (Yrs)
+<br> <input type="text", name='Marraige Status (Yrs)', placeholder="Marriage years"> <br><br>
+
+
+ANSWER 1 IF YES ELSE 0! <br><br>
+Pregnant(Y/N) 
+
+<br> <input type="text", name='Pregnant(Y/N)', placeholder="Enter your answer"> <br><br>
+
+No of aborptions 
+<br> <input type="text", name='No. of abortions', placeholder="No of aborptions"> <br><br>
+
+Hip(inch)
+<br> <input type="text", name='Hip(inch)', placeholder="Hip(inch)
+"> <br><br>
+
+Waist(inch) 
+<br> <input type="text", name='Waist(inch)', placeholder="Waist(inch)"> <br><br>
+
+Waist/Hip Ratio 
+<br> <input type="text", name='Waist:Hip Ratio', placeholder="Waist/Hip"> <br><br>
+
+
+
+<br>
+ANSWER 1 IF YES ELSE 0!
+<br><br>(Only where (Y/N) is mentioned)
+<br><br>
+
+Weight gain(Y/N) 
+<br> <input type="text", name='Weight gain(Y/N)', placeholder="Enter your answer"> <br><br>
+
+hair growth(Y/N)
+<br> <input type="text", name='hair growth(Y/N)', placeholder="Enter your answer"> <br><br>
+
+Skin darkening (Y/N)
+<br> <input type="text", name='Skin darkening (Y/N)', placeholder="Enter your answer"> <br><br>
+
+Hair loss(Y/N)
+<br> <input type="text", name='Hair loss(Y/N) ', placeholder="Enter your answer"> <br><br>
+
+
+Pimples(Y/N) 
+<br> <input type="text", name='Pimples(Y/N)', placeholder="Enter your answer"> <br><br>
+ 
+Fast food (Y/N)
+<br> <input type="text", name='Fast food (Y/N)', placeholder="Enter your answer"> <br><br>
+
+
+Reg Exercise(Y/N) 
+<br> <input type="text", name='Reg.Exercise(Y/N)', placeholder="Enter your answer"> <br><br>
+
+
+           <input type="submit" , value='Result!' >
+        </form>
+
+
+
+</div>
+</div>
+
+<p>by VJAS Group</p>
+ </div >
+
+</body>
+</html>
